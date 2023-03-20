@@ -5,27 +5,36 @@
         <title>Creating a simple form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"></link>
     </head>
-    <body style="background-color:grey;">
+    <body>
+        <div id="Info">
+            <div id="fhead">
         <h1>Personal Information</h1>
+            </div>
+            
+        <div id="Details">
       <form autocomplete="on">                                                                          
         <fieldset> <legend><h3>Basic Details</h3></legend>
-            <label for="fname">Fullname</label><br>
-            <input type="text" name="fname" id="fname" required><br>
+            <label for="fname" value=>Fullname</label><br>
+            <input type="text" name="fname" id="fname" placeholder="Fullname..." required><br>
             <label for="email">Email</label><br>
-            <input type="email" name="email" id="email" required><br>
+            <input type="email" name="email" id="email" placeholder="Email Address.." required><br>
             <label for="pnumber">Phone number </label><br>
-            <input type="number" name="pnumber" id="pnumber" required><br>
+            <input type="number" name="pnumber" id="pnumber" placeholder="Phone number..." required><br>
             <label for="gender">Gender</label><br>
             <select name="gender" id="gender">
                 <option>Male</option>
                 <option>Female</option>
             </select><br>
             <label for="pwd">Password</label><br>
-            <input type="password" name="pwd" id="pwd" autocomplete="off" required><br>
+            <input type="password" name="pwd" id="pwd" autocomplete="off" placeholder="Input Password.." required><br>
             <br>
             <button type="button" onclick="alert('form submitted successfully')">Submit</button>                                            
         </fieldset>
-      </form>                                                     
+      </form> 
+        </div>       
+        </div>                                             
     </body>
 </html>
+ 
